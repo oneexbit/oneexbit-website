@@ -13868,6 +13868,18 @@ p.error {
   background: #1072de;
 }
 
+.section-team .team-links .link--inst:hover {
+  background: #bd67ba;
+}
+
+.section-team .team-links .link--twitter:hover {
+  background: #38a1f3;
+}
+
+.section-team .team-links .link--github:hover {
+  background: #000;
+}
+
 .section-team .team-name {
   font-size: 1.4rem;
   color: #26272b;
