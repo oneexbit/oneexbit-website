@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="40px" viewBox="0 0 160 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>liquid</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Bitsgap-Responsive-Web-V.2018" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Exchanges-Bitsgap-V.2018" transform="translate(-897.000000, -1738.000000)">
+            <g id="exchanges-block" transform="translate(359.000000, 1108.000000)">
+                <g id="platforms-on" transform="translate(94.000000, 150.000000)">
+                    <g id="livecoin" transform="translate(444.000000, 480.000000)">
+                        <g transform="translate(13.000000, 1.000000)">
+                            <g fill="#1D88CA">
+                                <path d="M16.9861224,2.69605017 C24.9379592,2.69605017 31.3826939,9.11893831 31.3826939,17.0438197 C31.3826939,24.968701 24.9379592,31.3915892 16.9861224,31.3915892 C9.03428571,31.3915892 2.58955102,24.968701 2.58955102,17.0438197 C2.58955102,9.11893831 9.03428571,2.69605017 16.9861224,2.69605017 M16.9861224,0.115277288 C26.3701224,0.115277288 33.9722449,7.69162983 33.9722449,17.0438197 C33.9722449,26.3958942 26.3701224,33.972362 16.9861224,33.972362 C7.60212245,33.972362 0,26.3958942 0,17.0438197 C0,7.69162983 7.60212245,0.115277288 16.9861224,0.115277288" id="Fill-1"></path>
+                                <polygon id="Fill-4" points="13.6672714 15.21228 13.6672714 23.5860766 10.2882034 23.5860766 10.2882034 17.0720224"></polygon>
+                                <polygon id="Fill-6" points="18.5391014 12.5383586 18.5391014 23.4653824 15.160149 23.4653824 15.160149 14.398101"></polygon>
+                                <polygon id="Fill-8" points="23.4008701 9.85430644 23.4008701 23.3446997 20.021802 23.3446997 20.021802 11.7140488"></polygon>
+                            </g>
+                            <text font-family="Gilroy-Semibold, Gilroy" font-size="18" font-weight="500" letter-spacing="2">
+                                <tspan x="41" y="23" fill="#1D88CA">LIVE</tspan>
+                                <tspan x="83.164" y="23" fill="#60B1E4">COI</tspan>
+                                <tspan x="121.078" y="23" fill="#60B1E4">N</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

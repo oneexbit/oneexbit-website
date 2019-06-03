@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 130.57 131.56">
+  <defs>
+    <linearGradient id="y" x1="261.09" y1="-67.08" x2="332.21" y2="-134.45" gradientTransform="matrix(.85 -.15 .44 .74 -112.73 215.52)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6ee8fc"/>
+      <stop offset=".03" stop-color="#66d6eb"/>
+      <stop offset=".12" stop-color="#51a7c2"/>
+      <stop offset=".21" stop-color="#3e7f9d"/>
+      <stop offset=".31" stop-color="#2f5c7e"/>
+      <stop offset=".42" stop-color="#224064"/>
+      <stop offset=".53" stop-color="#182a51"/>
+      <stop offset=".65" stop-color="#111b43"/>
+      <stop offset=".79" stop-color="#0d123b"/>
+      <stop offset="1" stop-color="#0c0f38"/>
+    </linearGradient>
+    <linearGradient id="u" x1="206.39" y1="-122.84" x2="276.37" y2="-191.34" gradientTransform="matrix(.84 -.14 .44 .73 -98.6 184.78)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0c0f38"/>
+      <stop offset=".18" stop-color="#0c113b"/>
+      <stop offset=".33" stop-color="#0b1646"/>
+      <stop offset=".47" stop-color="#0a1f58"/>
+      <stop offset=".61" stop-color="#082c71"/>
+      <stop offset=".75" stop-color="#063d91"/>
+      <stop offset=".88" stop-color="#0451b8"/>
+      <stop offset="1" stop-color="#0168e5"/>
+    </linearGradient>
+    <linearGradient id="o" x1="1367.65" y1="158.59" x2="1438.63" y2="91.34" gradientTransform="matrix(-.15 -.85 .74 -.44 214.18 1280.49)" xlink:href="#y"/>
+    <linearGradient id="l" x1="1313.46" y1="102.3" x2="1382.27" y2="34.99" gradientTransform="matrix(-.16 -.85 .75 -.43 193.92 1271.17)" xlink:href="#u"/>
+    <linearGradient id="p" x1="861.83" y1="-182.96" x2="932.67" y2="-250.07" gradientTransform="matrix(.5 -.7 .83 .21 -157.03 739.15)" xlink:href="#y"/>
+    <linearGradient id="k" x1="807.52" y1="-239.12" x2="876.43" y2="-306.55" gradientTransform="matrix(.49 -.7 .83 .21 -166.89 712.49)" xlink:href="#u"/>
+    <linearGradient id="m" x1="1484.52" y1="759.27" x2="1555.65" y2="691.88" gradientTransform="matrix(-.7 -.5 .2 -.83 975.35 1380.19)" xlink:href="#y"/>
+    <linearGradient id="n" x1="1423.28" y1="669.55" x2="1505.69" y2="669.59" gradientTransform="matrix(-.71 -.49 .22 -.83 956.19 1387.28)" xlink:href="#u"/>
+  </defs>
+  <g data-name="Слой 2">
+    <g data-name="Слой 1">
+      <path style="mix-blend-mode:lighten" fill="url(#y)" d="M89.8 131.56l-19.82-8.81L99.1 61.56l19.82 8.8-29.12 61.2z"/>
+      <path style="mix-blend-mode:lighten" fill="url(#u)" d="M31.41 70L11.6 61.1 40.36 0l19.81 8.9L31.41 70z"/>
+      <path style="mix-blend-mode:lighten" fill="url(#o)" d="M130.57 41.25l-8.78 19.82-61.22-29.21 8.78-19.81 61.22 29.2z"/>
+      <path style="mix-blend-mode:lighten" fill="url(#l)" d="M70 100.46l-8.68 19.81L0 90.69l8.68-19.81L70 100.46z"/>
+      <path style="mix-blend-mode:lighten" fill="url(#p)" d="M129.79 94.94l-20.45 7.36-23.89-62.77 20.46-7.36 23.88 62.77z"/>
+      <path style="mix-blend-mode:lighten" fill="url(#k)" d="M44.85 92.6L24.4 99.9.36 37.21l20.46-7.31 24.03 62.7z"/>
+      <path style="mix-blend-mode:lighten" fill="url(#m)" d="M94.17 1.26l7.39 20.45-62.61 23.73-7.39-20.46L94.17 1.26z"/>
+      <path style="mix-blend-mode:lighten" fill="url(#n)" d="M92.31 85.83l7.21 20.45-62.8 24.41-7.2-20.46 62.79-24.4z"/>
+    </g>
+  </g>
+</svg>
