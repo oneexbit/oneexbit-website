@@ -12284,6 +12284,8 @@ p.error {
   padding-top: 1rem;
 }
 
+.header .logo { position: relative; }
+
 .header .logo .link img {
   -webkit-animation: rotateLogoOut 0.8s ease-in-out alternate;
   animation: rotateLogoOut 0.8s ease-in-out alternate;
@@ -14146,3 +14148,22 @@ p.error {
 .popup-thanks .popup-side {
   padding: 5rem 2.5rem 4rem 2.5rem;
 }
+
+.language-select { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; color: #fff; height: 2.6rem; overflow: hidden; width: 8rem; position: absolute; cursor: pointer; list-style: none; top: 50%; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); left: 100%; padding: 0; margin: -1.3rem 0 0 1.5rem; -webkit-transition: all 150ms ease-in-out; -o-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; }
+
+.language-select:hover { background: #01264b; }
+
+.language-select:hover li.active { color: #fff; }
+
+.language-select li { vertical-align: middle; padding: .5rem 1rem; text-align: left; -webkit-box-pack: left; -webkit-justify-content: left; -ms-flex-pack: left; justify-content: left; -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; font-size: 1.4rem; min-height: 2.6rem; color: #848e9c; }
+
+.language-select li:hover { cursor: pointer; background: #1072de; color: #fff; }
+
+.language-select li img { margin-right: 10px; width: 1.6rem; vertical-align: middle; display: inline-block; }
+
+.language-select li span { vertical-align: middle; display: inline-block; }
+
+.language-select.open { height: 7.8rem; }
+
+.language-select li.active { -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; pointer-events: none; }
+

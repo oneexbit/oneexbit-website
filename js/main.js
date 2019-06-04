@@ -238,4 +238,23 @@ $(document).ready(function($) {
     $(this).toggleClass("active");
     $(".menu-list").toggleClass("open");
   });
+
+    $('.language-select').click(function(){
+  $(this).toggleClass('open');
+
+})
+
+$('.language-select li').click(function(){    
+  $('ul li').removeClass('active');
+  lang = $(this).data('lang')
+  if (lang == 'cn') {
+    window.location = 'https://cn.oneexbit.com/'
+  } else if (lang == 'kr') {
+    window.location = 'https://kr.oneexbit.com/'
+  } else {
+    window.location = 'https://oneexbit.com/'
+  }
+  $(this).toggleClass('active');
+})
+  
 });
