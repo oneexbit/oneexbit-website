@@ -24,7 +24,7 @@ $(document).ready(function($) {
         "Main",
         "Exchanges",
         "Features",
-        "Coininfo",
+        // "Coininfo",
         "RoadMap",
         "For",
         "Support",
@@ -51,7 +51,7 @@ $(document).ready(function($) {
           .find(".anim")
           .addClass("animated fadeInUp");
 
-        if (nextIndex == 2 || nextIndex == 5) {
+        if (nextIndex == 2 || nextIndex == 4) {
           // console.log('2')
           $(".header").addClass("custom");
           $("#pp-nav").addClass("custom");
@@ -239,22 +239,20 @@ $(document).ready(function($) {
     $(".menu-list").toggleClass("open");
   });
 
-    $('.language-select').click(function(){
-  $(this).toggleClass('open');
+  $(".language-select").click(function() {
+    $(this).toggleClass("open");
+  });
 
-})
-
-$('.language-select li').click(function(){    
-  $('ul li').removeClass('active');
-  lang = $(this).data('lang')
-  if (lang == 'cn') {
-    window.location = 'https://cn.oneexbit.com/'
-  } else if (lang == 'kr') {
-    window.location = 'https://kr.oneexbit.com/'
-  } else {
-    window.location = 'https://oneexbit.com/'
-  }
-  $(this).toggleClass('active');
-})
-  
+  $(".language-select li").click(function() {
+    $("ul li").removeClass("active");
+    lang = $(this).data("lang");
+    if (lang == "cn") {
+      window.location = "https://cn.oneexbit.com/";
+    } else if (lang == "kr") {
+      window.location = "https://kr.oneexbit.com/";
+    } else {
+      window.location = "https://oneexbit.com/";
+    }
+    $(this).toggleClass("active");
+  });
 });
