@@ -24,7 +24,6 @@ $(document).ready(function($) {
         "Main",
         "Exchanges",
         "Features",
-        // "Coininfo",
         "RoadMap",
         "For",
         "Support",
