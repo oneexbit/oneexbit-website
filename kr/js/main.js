@@ -27,7 +27,6 @@ $(document).ready(function($) {
         "RoadMap",
         "For",
         "Support",
-        "Team",
         "Price"
       ],
       menu: ".menu-list",
