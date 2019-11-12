@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Onex docs | Candlestick charts </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/docs/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/docs/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"Candlestick charts","path":"terminal/second_part.html"},"data":{"navigation":{"logo":{"text":"OneExBit guide","type":"link","path":"index.html"},"main":[{"text":"Terminal Guides","type":"label"},{"text":"Part 1: Currency pairs, quotes, and volumes","type":"link","path":"/terminal/first_part.html"},{"text":"Part 2: Candlestick charts","type":"link","path":"/terminal/second_part.html"}]}},"config":{"timezone":"UTC","root":"/docs/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/docs/index.html" class="doc-navbar__logo"><img src="/docs/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">OneExBit guide</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="OneExBit-trading-terminal-guide-part-2-Candlestick-charts"><a href="#OneExBit-trading-terminal-guide-part-2-Candlestick-charts" class="headerlink" title="OneExBit trading terminal guide, part 2: Candlestick charts"></a>OneExBit trading terminal guide, part 2: Candlestick charts</h1><p><em>In the first chapter of our guide, we looked at how to switch from one exchange to another, select a trading pair, and sort pairs by volume, price changes, and so on. This time, we’ll look at the main element of the interface – the chart.</em></p>
+<p>The standard trading chart you see when you open the terminal is the so-called candlestick chart. Candlesticks are those green and red vertical bars. Each of them can tell you a lot about the price movement within a certain period of time.</p>
+<p><img src="/docs/images/2nd_1.png" alt="2nd_1"></p>
+<hr>
+<p>At the top, you can see which exchange you are working with (Bitfinex) and which currency pair you’re looking at (BTC/USD). Note that there’s also the current (last) price, the lowest and highest price reached within the last 24 hours, as well as the trading volume:</p>
+<p><img src="/docs/images/2nd_2.png" alt="2nd_2"></p>
+<p>At the top left of the chart, you can choose between different time frames:</p>
+<ul>
+<li>Minutes: you can select 1 min, 5 min, 15 min, or 30 minutes;</li>
+<li>Hours: choose between 1 h, 3 h, 6 h, or 12 hours;</li>
+<li>Daily (1D);</li>
+<li>Weekly (1W);</li>
+<li>Monthly (1M).</li>
+</ul>
+<p>The key thing to understand is that one candlestick always represents one unit of time in your chosen timeframe. If you select 15 minutes, then each candlestick will show you data for a 15-minute period. If you select 1 day, then each candlestick will represent 1 day. The data used to generate the chart is still the same, but on larger time frames, more data is compressed into each candlestick. A period of one hour on a 5-minute chart will consist of 12 separate candles, but on a 1-hour chart, it will all fit into one candle. </p>
+<hr>
+<p>Just above the chart on the left, but below the timeframe selectors, you’ll find the values of the opening (O) and closing (C) price for the selected period, as well as the highest (H) and lowest (L) price reached in that period.</p>
+<p><img src="/docs/images/2nd_3.png" alt="2nd_3"></p>
+<p>As you move the cursor along the chart, you’ll see which exact period you are looking at. For example, in the following two screenshots we are looking at October 26 and October 27. Note that the O, H, L, and C values change as you go from one candle to the next.</p>
+<p><img src="/docs/images/2nd_4.png" alt="2nd_4"></p>
+<p><img src="/docs/images/2nd_5.png" alt="2nd_5"></p>
+<hr>
+<p> Now let’s look at the color and structure of a candle.</p>
+<p> You’ll see that most of them have a thicker “body” (known as wax) and then a sort of a needle sticking out from the top and the bottom. These needles are called shadows: the one at the top is called a wick, and the one at the bottom is called a tail.</p>
+<p> The top and bottom edges of the body (wax) represent the opening and closing price. How do you know which is which? From the color. A green candle means that the closing price was higher than the opening price, so that the trend was positive. Conversely, a red candle shows you that the price went down. </p>
+<p> <img src="/docs/images/2nd_6.png" alt="2nd_6"></p>
+<p> The wick and the tail point to the highest and lowest price reached during the selected trading period.</p>
+<p>OneExBit trading terminal allows you to combine several charts in the same window. To switch between different layouts, use the icons at the top right of the chart:</p>
+<p><img src="/docs/images/2nd_7.png" alt="2nd_7"></p>
+<p>You can choose between a single large chart (default), two charts arranged horizontally or vertically, four charts, or one full-screen chart (to exit the full screen mode, press Esc). The circular arrow refreshes the charts. </p>
+<p><img src="/docs/images/2nd_8.png" alt="2nd_8"></p>
+<p><img src="/docs/images/2nd_9.png" alt="2nd_9"></p>
+<hr>
+<p><em>So now you know the basics of working with standard candlestick charts in OneExBit. Next time, we’ll look at other types of charts you can use – including line, bars, and hollow candles. If you still haven’t tried our trading terminal, you should do so asap! Download it at</em> <a href="https://oneexbit.com/" target="_blank" rel="noopener">oneexbit.com</a>.</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/docs/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

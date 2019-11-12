@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Onex docs | Currency pairs, quotes, and volumes </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/docs/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/docs/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"Currency pairs, quotes, and volumes","path":"terminal/first_part.html"},"data":{"navigation":{"logo":{"text":"OneExBit guide","type":"link","path":"index.html"},"main":[{"text":"Terminal Guides","type":"label"},{"text":"Part 1: Currency pairs, quotes, and volumes","type":"link","path":"/terminal/first_part.html"},{"text":"Part 2: Candlestick charts","type":"link","path":"/terminal/second_part.html"}]}},"config":{"timezone":"UTC","root":"/docs/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/docs/index.html" class="doc-navbar__logo"><img src="/docs/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">OneExBit guide</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="OneExBit-Terminal-Tutorial-Part-1-Currency-pairs-quotes-and-volumes"><a href="#OneExBit-Terminal-Tutorial-Part-1-Currency-pairs-quotes-and-volumes" class="headerlink" title="OneExBit Terminal Tutorial Part 1: Currency pairs, quotes, and volumes"></a>OneExBit Terminal Tutorial Part 1: Currency pairs, quotes, and volumes</h1><p><em>In this chapter, we are opening a series of tutorials for our awesome OneExBit trading terminal. From reading charts to adding exchange accounts and making transactions - we will guide you step by step. OneExBit is a great choice for novice traders because you can have all your accounts in one place and switch between them instantly. Our interface is intuitive and easy to learn even for beginners. Plus, it’s free!</em></p>
+<p>We know how daunting it can be for a newbie to see a standard trading interface with its charts, candlesticks, orderbook, and so on. So before we tell you how to register on exchanges and add your trading accounts into the terminal, let’s get to know the OneExBit program first. Don’t worry, we won’t overload you with information – we’ll do it in small bite-sized instalments.</p>
+<p>In this chapter, we’ll see <strong>how to view prices for various cryptocurrencies on different exchanges</strong>. You don’t need to have any trading account to do this – though you do need to be online. So, in your home window of OneExBit, look in the top left corner. You’ll see the name of the currently selected currency pair (ETH/BTC) in this example) and exchange (Bitfinex). This means that the chart you’re looking at shows the price movements of the ETH/BTC pair on Bitfinex.</p>
+<p><img src="/docs/images/1st_1.png" alt="1st_1"></p>
+<hr>
+<p>OneExBit has 10 major integrated exchanges, and we’re working on adding more. Let’s switch to Binance for now. Click on the name of the exchange, and a drop-down menu will appear. Choose Binance.</p>
+<p><img src="/docs/images/1st_2.png" alt="1st_2"></p>
+<hr>
+<p>You’ll instantly see the chart changing radically. It’s not surprising, since the default pair has changed, too – in this case, to BTC/USDT. Now click on the pair to get to the currency pair menu.</p>
+<p><img src="/docs/images/1st_3.png" alt="1st_3"></p>
+<hr>
+<p>The BTC/USDT pair can be found in the Stable section, because USDT is a stablecoin, pegged to the US dollar. Let’s say you’re not interested in trading USDT but would rather prefer ETH/BTC. You’ll find it in the BTC section – click on it.</p>
+<p><img src="/docs/images/1st_4.png" alt="1st_4"></p>
+<hr>
+<p>In the Price field, you’ll see how much BTC you would get for 1 ETH on Binance right now – in this case, 0.021845 BTC. Remember that the exchange rate always indicates how much of the second currency (the one after the slash) you’ll get by selling one unit of the first currency. This seems obvious when you look at the exchange rate in a pair like ETH/BTC – because Bitcoin is so much more expensive than any other crypto. But try switching to the Altcoin tab and look at a pair like BTCU/SDS.</p>
+<p><img src="/docs/images/1st_5.png" alt="1st_5"></p>
+<hr>
+<p>Here you need to remember how to read the rate: for 1 BTCU, you’ll get 7 945.630 SDS. Also, don’t forget that the exchange rate for each given pair will differ from one exchange to another.<br>The number under the price shows how much the exchange rate has changed in the past 24 hours – in green,if it’s gone up, and in red if the price has gone down.<br>By default, pairs in the list are sorted by decreasing volume, with ETH/BTC being the most traded BTC pair on Binance. You can click on the words Name, Price, and Change to sort the list in different ways, both in decreasing and increasing order. Here’s what we’ll get by sorting the list of BTC pairs by price in decreasing order (that is, with the currencies that are more expensive relative to BTC on top):</p>
+<p><img src="/docs/images/1st_6.png" alt="1st_6"></p>
+<hr>
+<p>Note that by clicking on Change, you can see which coins have grown or fallen most in the past 24 hours. In some cases, this might give you an indication of which coins could be a good buy.</p>
+<p><img src="/docs/images/1st_7.png" alt="1st_7"></p>
+<hr>
+<p>When you want to find a specific pair, you don’t have to scroll through the whole list. Just enter the name of one of the currencies in the Search field. Let’s say you are looking for REN/BNB – just type ren. Once you’ve located the pair you need, you can click on the little star to add it to your watchlist – this way you won’t need to do the search again in the future.</p>
+<p><img src="/docs/images/1st_8.png" alt="1st_8"></p>
+<hr>
+<p>Check the Watchlist tab to see that the pair has been added:</p>
+<p><img src="/docs/images/1st_9.png" alt="1st_9"></p>
+<hr>
+<p>We encourage you to play with the list of currency pairs: switch between different exchanges and explore which pairs they offer! Also note how exchange rates for the same pair differ – and how much the volume can vary. You’ll see that some exchanges lean heavily towards certain pairs.</p>
+<p><em>That’s it for today, folks – next time, we’ll see how the orderbook works! If you have any questions, post them in the comments or get in touch with us on <a href="https://t.me/oneexbit" target="_blank" rel="noopener">Telegram</a>. And if you still haven’t tried OneExBit trading terminal, download it right now <a href="https://oneexbit.com/#Main" target="_blank" rel="noopener">here</a></em></p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/docs/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
